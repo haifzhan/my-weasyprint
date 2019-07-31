@@ -33,6 +33,32 @@
 
 @page {
   size: Letter;
+
+  @bottom-left {
+    content: string(heading);
+    font-size: 9pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @bottom-right {
+    background: #14213d;
+    color: #ffffff;
+    content: counter(page);
+    height: 1cm;
+    text-align: center;
+    width: 1cm;
+  }
+
+  @bottom-center {
+    background: #14213d;
+    content: '';
+    display: block;
+    height: 0.05cm;
+    opacity: 0.5;
+    width: 100%;
+  }
 }
 
 @page :first {
@@ -56,7 +82,8 @@ html {
 
 html body h1,
 html body h2,
-html body h3 {
+html body h3,
+html body h4 {
   margin: 0;
 }
 
@@ -69,10 +96,12 @@ html body h1 {
 }
 
 html body h2 {
+  string-set: heading content();
   color: #1fe494;
   font-size: 24pt;
   padding: 0;
   margin: 0;
+  border-bottom: solid 2px #cbd5e0;
 }
 
 html body article#cover {
@@ -83,39 +112,23 @@ html body article#cover {
   height: 297mm;
 }
 
+section {
+  margin-bottom: 2cm;
+}
+
 html body article#cover section {
   text-align: right;
   padding: 2cm 0.5cm;
 }
 
-.showcase {
+html body article#introduction section#features {
+  /* border: solid 1px #1fe494; */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 1cm;
-  /* border: solid 1px black; */
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  justify-content: center;
-}
-
-.column.left {
-  padding: 0 0.25cm;
-  text-align: center;
-}
-
-.column.right {
-  padding: 0 0.25cm;
-  text-align: center;
-}
-
-.showcase img {
-  height: 6cm;
-  width: auto;
+.feature {
+  /* border: solid 1px tomato; */
+  padding: 10px;
+  width: 33%;
+  text-align: left;
 }
