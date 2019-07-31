@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Fira Sans;
+  font-weight: 400;
+  src: url(./font/FiraSans-Regular.otf);
+}
+
+@font-face {
+  font-family: Fira Sans;
+  font-style: italic;
+  font-weight: 400;
+  src: url(./font/FiraSans-Italic.otf);
+}
+
+@font-face {
+  font-family: Fira Sans;
+  font-weight: 300;
+  src: url(./font/FiraSans-Light.otf);
+}
+
+@font-face {
+  font-family: Fira Sans;
+  font-style: italic;
+  font-weight: 300;
+  src: url(FiraSans-LightItalic.otf);
+}
+
+@font-face {
+  font-family: Fira Sans;
+  font-weight: bold;
+  src: url(FiraSans-Bold.otf);
+}
+
+@page {
+  size: Letter;
+}
+
+@page :first {
+  background: url(../assets/cover.png) no-repeat center;
+  background-size: cover;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #14213d;
+  --secondary-color: #1fe494;
+}
+
+html {
+  color: #393939;
+  font-family: Fira Sans;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+html body h1,
+html body h2,
+html body h3 {
+  margin: 0;
+}
+
+html body h1 {
+  color: #ffffff;
+  font-size: 38pt;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+html body h2 {
+  color: #1fe494;
+  font-size: 24pt;
+  padding: 0;
+  margin: 0;
+}
+
+html body article#cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  height: 297mm;
+}
+
+html body article#cover section {
+  text-align: right;
+  padding: 2cm 0.5cm;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1cm;
+  /* border: solid 1px black; */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
+.column.left {
+  padding: 0 0.25cm;
+  text-align: center;
+}
+
+.column.right {
+  padding: 0 0.25cm;
+  text-align: center;
+}
+
+.showcase img {
+  height: 6cm;
+  width: auto;
+}
