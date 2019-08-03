@@ -2,7 +2,8 @@ import os
 import weasyprint
 from jinja2 import Environment, FileSystemLoader
 
-ROOT = '/Users/hzhang/google-drive/my-weasyprint'
+# ROOT = '/Users/hzhang/google-drive/my-weasyprint'
+ROOT = '/Users/hzhang/Work/my-weasyprint'
 
 TEMPLAT_SRC = os.path.join(ROOT, 'templates')
 CSS_SRC = os.path.join(ROOT, 'static')

@@ -105,6 +105,7 @@ html body h2 {
   border-bottom: solid 2px #cbd5e0;
 }
 
+
 html body article#cover {
   display: flex;
   flex-direction: column;
@@ -145,4 +146,28 @@ html body article#introduction section#features {
   padding: 10px;
   width: 33%;
   text-align: left;
+}
+
+html body article#story img {
+  width: 100%;
+  height: auto;
+}
+
+html body article#insight section {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+
+html body article#insight section img {
+  width: 8cm;
+  height: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
