@@ -40,6 +40,7 @@
     height: 1cm;
     vertical-align: middle;
     width: 100%;
+    text-transform: uppercase;
   }
 
   @bottom-right {
@@ -116,9 +117,22 @@ section {
   margin-bottom: 2cm;
 }
 
+a {
+  font-style: italic;
+  font-size: 120%;
+}
 html body article#cover section {
   text-align: right;
   padding: 2cm 0.5cm;
+}
+
+html body article#introduction section#about {
+  border-left: solid 3px #e8e8e8;
+  padding-left: 10px;
+}
+
+html body article#introduction section#about p {
+  color: #909090;
 }
 
 html body article#introduction section#features {

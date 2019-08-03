@@ -19,7 +19,7 @@ class LineChart:
         fig.add_trace(pgo.Scatter(
             x=days,
             y=data,
-            line=dict(color=secondary_color,),
+            line=dict(color='#ffffff',),
         ))
 
         pio.write_image(fig, output)
