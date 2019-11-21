@@ -1,140 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>My Report</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <article id="cover">
-        <section>
-            <h1>WeasyPrint</h1>
-            <h2>You Are My Only Hope!</h2>
-        </section>
+      <section>
+        <h1>WeasyPrint</h1>
+        <h2>You Are My Only Hope!</h2>
+      </section>
     </article>
 
-
     <article id="introduction">
-        <h2>What is WeasyPrint?</h2>
-        <section id="about">
-            <p>
-                WeasyPrint has been created and is maintained by Kozea community, a group of people designing,
-                maintaining and developing free and open source software.
-            </p>
+      <h2>What is WeasyPrint?</h2>
+      <section id="about">
+        <p>
+          WeasyPrint has been created and is maintained by Kozea community, a
+          group of people designing, maintaining and developing free and open
+          source software.
+        </p>
 
-            <p>
-                You want to share some kind words with the core team? You would be interested in training courses about
-                CSS
-                for print? You would love new features but do not have the time or the development resources? Send us a
-                message!
-            </p>
+        <p>
+          You want to share some kind words with the core team? You would be
+          interested in training courses about CSS for print? You would love new
+          features but do not have the time or the development resources? Send
+          us a message!
+        </p>
 
-            <p>
-                WeasyPrint is free and open source software that can be easily plugged to your applications and
-                websites.
-            </p>
-            <a href="https://weasyprint.org/about/">https://weasyprint.org/about/</a>
+        <p>
+          WeasyPrint is free and open source software that can be easily plugged
+          to your applications and websites.
+        </p>
+        <a href="https://weasyprint.org/about/"
+          >https://weasyprint.org/about/</a
+        >
+      </section>
 
-        </section>
-
-        <h2>Features</h2>
-        <section id="features">
-            <div class="feature">
-                <h4>HTML/CSS Supported</h4>
-                <p>Everyone knows enough HTML and CSS to generate simple report, no need to learn a whole new templating
-                    language</p>
-            </div>
-            <div class="feature">
-                <h4>Productivity</h4>
-                <p>Official samples are gorges and covers most layout use cases which make you more productive!</p>
-            </div>
-            <div class="feature">
-                <h4>One click to debug</h4>
-                <p>Weasyprint gives developer control to debug. Render/Debug on Webpage shows you margins and paddings.
-                </p>
-            </div>
-        </section>
-        <section id="features">
-            <div class="feature">
-                <h4>Flexibility</h4>
-                <p>WeasyPrint can be used either as a standalone program or as a Python library</p>
-            </div>
-            <div class="feature">
-                <h4>Documentation</h4>
-                <p>When learning a new tool, the most challenging thing is hard to find how to use and customize.
-                    Weasyprint has very well documents.
-                </p>
-            </div>
-            <div class="feature">
-                <h4>Actively Maintained</h4>
-                <p>It is actively maintained, WeasyPrint is evolving and you can get helped either from StackOverflow or
-                    GitHub issues.</p>
-            </div>
-        </section>
+      <h2>Features</h2>
+      <section id="features">
+        <div class="feature">
+          <h4>HTML/CSS Supported</h4>
+          <p>
+            Everyone knows enough HTML and CSS to generate simple report, no
+            need to learn a whole new templating language
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Productivity</h4>
+          <p>
+            Official samples are gorges and covers most layout use cases which
+            make you more productive!
+          </p>
+        </div>
+        <div class="feature">
+          <h4>One click to debug</h4>
+          <p>
+            Weasyprint gives developer control to debug. Render/Debug on Webpage
+            shows you margins and paddings.
+          </p>
+        </div>
+      </section>
+      <section id="features">
+        <div class="feature">
+          <h4>Flexibility</h4>
+          <p>
+            WeasyPrint can be used either as a standalone program or as a Python
+            library
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Documentation</h4>
+          <p>
+            When learning a new tool, the most challenging thing is hard to find
+            how to use and customize. Weasyprint has very well documents.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Actively Maintained</h4>
+          <p>
+            It is actively maintained, WeasyPrint is evolving and you can get
+            helped either from StackOverflow or GitHub issues.
+          </p>
+        </div>
+      </section>
     </article>
 
     <article id="story">
-        <h2>Why I choose WeasyPrint?</h2>
-        <section id="commits">
-            <h3>Our story</h3>
-            <p>A couple of months ago, I got a project and was told to build PDF reports based on given JSON data sources.
-                Briefly, the report contains text messages, charts and tables. Before this project, I had more than 7 years
-                back-end development background and 3 years web & mobile development background but still had no clue how to 
-                build beautiful reports in very limited time.
-            </p>
-            <ul>
-                <li>1. How to parse JSON sources and fetch required data?</li>
-                <li>2. What tech stack to choose for the project?</li>
-                <li>3. Should we build the report on client side or server side?</li>
-            </ul>
-            <p>I don't want to make a rush decision even the deadline is quite urgent, I believed that the right tool will do the work fast
-                and efficient. I spent a lot of time doing research on Google, Reddit, StackOverflow, GitHub. Finally found a couple potential tools like jsPDF, ReportLab and pyPDF. I have tried each of them in a week or two and built
-                mockup report but I wasn't satisfied with the crude results. </p>
-            
-                <p>The first tool I decided to not use was jsPDF. The first reason was the charts would be blurry when rendering PDF, my question can be found on SO:
-                    <a href="https://stackoverflow.com/questions/53256587/canvas-charts-is-blurry-when-download-as-pdf">Canvas charts is blurry when download as PDF
-                    </a>. Another reason was it was time consuming to parse the raw JSON source and it'd better to parse data and generate report on server side.
-                    </p>
+      <h2>Why I choose WeasyPrint?</h2>
+      <section id="commits">
+        <h3>Our story</h3>
+        <p>
+          A couple of months ago, I got a project and was told to build PDF
+          reports based on given JSON data sources. Briefly, the report contains
+          text messages, charts and tables. Before this project, I had more than
+          7 years back-end development background and 3 years web & mobile
+          development background but still had no clue how to build beautiful
+          reports in very limited time.
+        </p>
+        <ul>
+          <li>1. How to parse JSON sources and fetch required data?</li>
+          <li>2. What tech stack to choose for the project?</li>
+          <li>3. Should we build the report on client side or server side?</li>
+        </ul>
+        <p>
+          I don't want to make a rush decision even the deadline is quite
+          urgent, I believed that the right tool will do the work fast and
+          efficient. I spent a lot of time doing research on Google, Reddit,
+          StackOverflow, GitHub. Finally found a couple potential tools like
+          jsPDF, ReportLab and pyPDF. I have tried each of them in a week or two
+          and built mockup report but I wasn't satisfied with the crude results.
+        </p>
 
-                <p>Other reasons to give up other tools were either we couldn't afford, we will build more than two thusand reports per year and the price would be crazy 
-                    if it was over the limit; the learning curve< is another cause, learn a new templating language or rules to build layout was challenging and takes too
-                much time and our sales team can't wait that long.</p>
-                <p>One month later after I did research and mockup, I was back to the beginning point. To be honest, I was a little bit frustrated because I still don't know what tool to use but
-                    the good side is I know what not to use for project under the circumstance. </p>
-                    <p>
-                        Next week, I kept doing research and found <a href="https://pbpython.com/pdf-reports.html">Creating PDF Reports with Pandas, Jinja and WeasyPrint</a>
-                        When I saw the samples from Weasyprint website, I was shocked and impressed by the gorges report. Weasyprint draw my attention and I started reading weasyprint docs and was happy that 
-                        it uses HTML & CSS which I have enough knowledge. I can't wait to follow the samples to build a mockup in just half a day and showed it to my boss.
-                        I got a big WOW and I know we have found the right tool! Thank you Weasyprint!
-                    </p>
-                    
-                </section>
-                <section id="maintain"></section>
-            </article>
-            <article id="insight">
-                <section>
-                    <div class="column">
-                        <img src="file:///Users/hzhang/Work/my-weasyprint/assets/line_chart.svg" alt=""> 
-                    </div>
-                    <div class="column">When I choose one open source, the first thing I am checking is how active the project is.
-                        I have selected weekdays commit in March, 2019. You can see the project commits is frequent which means it is actively maintained.</div>
-                </section>
+        <p>
+          The first tool I decided to not use was jsPDF. The first reason was
+          the charts would be blurry when rendering PDF, my question can be
+          found on SO:
+          <a
+            href="https://stackoverflow.com/questions/53256587/canvas-charts-is-blurry-when-download-as-pdf"
+            >Canvas charts is blurry when download as PDF </a
+          >. Another reason was it was time consuming to parse the raw JSON
+          source and it'd better to parse data and generate report on server
+          side.
+        </p>
 
-                <section>
-                        <div class="column">
-                                <img src="file:///Users/hzhang/Work/my-weasyprint/assets/github.png" alt=""> 
-                            </div>
-                            <div class="column">The second thing I check is the numbers of open issues and closed issues.
-                               You can see July, 2019 - August 2019 there were 28 issues had been closed, I believe this is a good sign and the project is reliable.
-                            </div>>
-                </section>
-                <p>You may observed that the chart looks really good and has very high quality but the captured image is a little bit blurry.
-                    This is another thing I want to share: we use Plotly Python generate svg files and insert them into our report and it is 
-                    clear even we zoom out to 200%. 
-                </p>
-           </article>
+        <p>
+          Other reasons to give up other tools were either we couldn't afford,
+          we will build more than two thusand reports per year and the price
+          would be crazy if it was over the limit; the learning curve< is
+          another cause, learn a new templating language or rules to build
+          layout was challenging and takes too much time and our sales team
+          can't wait that long.
+        </p>
+        <p>
+          One month later after I did research and mockup, I was back to the
+          beginning point. To be honest, I was a little bit frustrated because I
+          still don't know what tool to use but the good side is I know what not
+          to use for project under the circumstance.
+        </p>
+        <p>
+          Next week, I kept doing research and found
+          <a href="https://pbpython.com/pdf-reports.html"
+            >Creating PDF Reports with Pandas, Jinja and WeasyPrint</a
+          >
+          When I saw the samples from Weasyprint website, I was shocked and
+          impressed by the gorges report. Weasyprint draw my attention and I
+          started reading weasyprint docs and was happy that it uses HTML & CSS
+          which I have enough knowledge. I can't wait to follow the samples to
+          build a mockup in just half a day and showed it to my boss. I got a
+          big WOW and I know we have found the right tool! Thank you Weasyprint!
+        </p>
+      </section>
+      <section id="maintain"></section>
+    </article>
+    <article id="insight">
+      <section>
+        <div class="column">
+          <img src="file://{{assets_dir}}/line_chart.svg" alt="" />
+        </div>
+        <div class="column">
+          When I choose one open source, the first thing I am checking is how
+          active the project is. I have selected weekdays commit in March, 2019.
+          You can see the project commits is frequent which means it is actively
+          maintained.
+        </div>
+      </section>
 
-</body>
-
+      <section>
+        <div class="column">
+          <img src="file://{{assets_dir}}/github.png" alt="" />
+        </div>
+        <div class="column">
+          The second thing I check is the numbers of open issues and closed
+          issues. You can see July, 2019 - August 2019 there were 28 issues had
+          been closed, I believe this is a good sign and the project is
+          reliable.
+        </div>
+        >
+      </section>
+      <p>
+        You may observed that the chart looks really good and has very high
+        quality but the captured image is a little bit blurry. This is another
+        thing I want to share: we use Plotly Python generate svg files and
+        insert them into our report and it is clear even we zoom out to 200%.
+      </p>
+    </article>
+  </body>
 </html>

@@ -63,7 +63,7 @@
 }
 
 @page :first {
-  background: url(../assets/cover.png) no-repeat center;
+  background: url(../../assets/cover.png) no-repeat center;
   background-size: cover;
   margin: 0;
 }

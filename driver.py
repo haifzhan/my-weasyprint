@@ -3,13 +3,14 @@ import weasyprint
 from jinja2 import Environment, FileSystemLoader
 
 ROOT = '/Users/hzhang/Lab/python-projects/my-weasyprint'
+ASSETS_DIR = os.path.join(ROOT, 'assets')
 
 TEMPLAT_SRC = os.path.join(ROOT, 'templates')
-CSS_SRC = os.path.join(ROOT, 'static')
+CSS_SRC = os.path.join(ROOT, 'static/css')
 DEST_DIR = os.path.join(ROOT, 'output')
 
 TEMPLATE = 'template.html'
-CSS = 'styles.css'
+CSS = 'style.css'
 OUTPUT_FILENAME = 'my-report.pdf'
 
 def start():
@@ -19,7 +20,7 @@ def start():
     css = os.path.join(CSS_SRC, CSS)
     
     # variables
-    template_vars = { }
+    template_vars = { 'assets_dir': ASSETS_DIR }
 
     # rendering to html string
     rendered_string = template.render(template_vars)
