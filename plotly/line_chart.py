@@ -1,4 +1,4 @@
-import plotly.graph_objs as pgo
+import plotly.graph_objects as pgo
 import plotly.io as pio
 
 primary_color = '#14213d'
@@ -54,4 +54,4 @@ class LineChart:
 
 
 if __name__ == '__main__':
-    LineChart.build_chart('/Users/hzhang/google-drive/my-weasyprint/assets/line_chart.svg')
+    LineChart.build_chart('/Users/hzhang/Lab/python-projects/my-weasyprint/assets/line_chart.svg')
