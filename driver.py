@@ -20,7 +20,7 @@ def start():
     css = os.path.join(CSS_SRC, CSS)
     
     # variables
-    template_vars = { 'assets_dir': ASSETS_DIR }
+    template_vars = { 'assets_dir': 'file://' + ASSETS_DIR }
 
     # rendering to html string
     rendered_string = template.render(template_vars)

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <link rel=stylesheet href="{{ url_for('static', filename='css/style.css') }}" />
     <meta charset="utf-8" />
     <title>My Report</title>
   </head>
@@ -13,7 +14,7 @@
       </section>
     </article>
 
-    <article id="introduction">
+    <article id="introduction" style="page-break-before: always">
       <h2>What is WeasyPrint?</h2>
       <section id="about">
         <p>
@@ -87,7 +88,7 @@
       </section>
     </article>
 
-    <article id="story">
+    <article id="story" style="page-break-before: always">
       <h2>Why I choose WeasyPrint?</h2>
       <section id="commits">
         <h3>Our story</h3>
@@ -154,10 +155,10 @@
       </section>
       <section id="maintain"></section>
     </article>
-    <article id="insight">
+    <article id="insight" style="page-break-before: always">
       <section>
         <div class="column">
-          <img src="file://{{assets_dir}}/line_chart.svg" alt="" />
+          <img src="{{assets_dir}}/line_chart.svg" alt="" />
         </div>
         <div class="column">
           When I choose one open source, the first thing I am checking is how
@@ -169,7 +170,7 @@
 
       <section>
         <div class="column">
-          <img src="file://{{assets_dir}}/github.png" alt="" />
+          <img src="{{assets_dir}}/github.png" alt="" />
         </div>
         <div class="column">
           The second thing I check is the numbers of open issues and closed

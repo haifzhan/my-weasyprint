@@ -6,6 +6,12 @@ comment out style.css when run as a python program `<link rel=stylesheet href="{
 
 # How to run as a Flask app?
 
+## Known issues
+
+Images:
+npm install -g http-server
+goto assets folder and run `http-server ./`
+
 import style.css when use flask:
  `<link rel=stylesheet href="{{ url_for('static', filename='css/style.css') }}" />`
 
