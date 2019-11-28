@@ -63,8 +63,8 @@
 }
 
 @page :first {
-  background: url(./cover.png) no-repeat center;
-  /* background: url("http://localhost:8080/cover.png"); */
+  /* background: url(./cover.png) no-repeat center; */
+  background: url("http://localhost:8080/cover.png");
   background-size: cover;
   margin: 0;
 }

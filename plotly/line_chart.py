@@ -12,6 +12,7 @@ class LineChart:
 
     @staticmethod
     def build_chart(output):
+        print('start build chart...')
         data = [1, 18, 21, 10, 17, 5, 3]
         days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
         layout = LineChart.build_layout()
@@ -23,6 +24,7 @@ class LineChart:
         ))
 
         pio.write_image(fig, output)
+        print('chart has been built and can be found under {}'.format(output))
 
     @staticmethod
     def build_layout():

@@ -14,11 +14,11 @@ CSS = 'style.css'
 OUTPUT_FILENAME = 'my-report.pdf'
 
 def start():
+    print('start generate report...')
     env = Environment(loader=FileSystemLoader(TEMPLAT_SRC))
-
     template = env.get_template(TEMPLATE)
     css = os.path.join(CSS_SRC, CSS)
-    
+
     # variables
     template_vars = { 'assets_dir': 'file://' + ASSETS_DIR }
 
@@ -27,7 +27,7 @@ def start():
     html = weasyprint.HTML(string=rendered_string)
     report = os.path.join(DEST_DIR, OUTPUT_FILENAME)
     html.write_pdf(report, stylesheets=[css])
-    print('file is generated successfully')
+    print('file is generated successfully and under {}', DEST_DIR)
 
 
 if __name__ == '__main__':
