@@ -1,3 +1,12 @@
+# What to install?
+install python3
+```
+conda install -c plotly plotly-orca
+pip install plotly
+pip install psutil
+pip install WeasyPrint
+pip install requests
+```
 # How to run as a python program?
 comment out style.css when run as a python program `<link rel=stylesheet href="{{ url_for('static', filename='css/style.css') }}" />`
 1. Go to plotly folder generate line chart by calling `python line_chart.py`
